@@ -4,7 +4,7 @@ from typing import List, Tuple
 import pandas as pd
 from langchain.chains import RetrievalQA
 from langchain.schema import Document
-from .llm import get_llm
+from app llm import get_llm 
 
 NAME_ONLY = re.compile(r"^[A-Za-zÀ-ÖØ-öø-ÿ' -]{3,}$")
 
