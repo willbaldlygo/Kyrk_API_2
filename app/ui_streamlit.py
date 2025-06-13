@@ -3,7 +3,7 @@ import tempfile
 import pandas as pd
 from pathlib import Path
 import streamlit as st
-from . import html_ingest, vectorstores, qa
+from app import html_ingest, vectorstores, qa  # ← absolute import
 
 st.set_page_config(page_title="Spine Copilot – OpenAI", page_icon="🏃‍♂️")
 st.title("🏔️ Summer Spine Copilot (OpenAI)")
