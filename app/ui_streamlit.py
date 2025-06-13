@@ -1,7 +1,8 @@
 from __future__ import annotations
 import tempfile
 import pandas as pd
-from pathlib import Path
+import sys, pathlib
+sys.path.append(str(pathlib.Path(__file__).resolve().parent.parent))
 import streamlit as st
 from app import html_ingest, vectorstores, qa  # ← absolute import
 
